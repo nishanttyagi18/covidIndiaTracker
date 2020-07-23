@@ -18,9 +18,9 @@ hbs.registerPartials(partialPath);
 
 app.use(express.static(publicDirectoryPath))
 
+app.use(indexRouter)
 app.use(districtRouter)
 app.use(stateRouter)
-app.use(indexRouter)
 app.use(aboutRouter)
 
 
