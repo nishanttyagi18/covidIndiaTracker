@@ -9,14 +9,24 @@ router.get('/state/:id', (req, res)=>{
         const arr = (data["statewise"])
         
         const result = arr.find(state => state.state.includes(tofind))
-        res.render('state', {
-            time: result.lastupdatedtime,
-            statename: result.state,
-            active: result.active,
-            recovered: result.recovered,
-            deaths: result.deaths,
-            confirmed: result.confirmed 
-        })
+
+        if(result){
+            res.render('state', {
+                time: result.lastupdatedtime,
+                statename: result.state,
+                active: result.active,
+                recovered: result.recovered,
+                deaths: result.deaths,
+                confirmed: result.confirmed 
+            })
+        }
+        else{
+            res.render('404',{
+                error: 'State not found!'
+              })
+        }
+
+        
     })
 })
 

@@ -8,7 +8,8 @@ router.get("/district/:id1/:id2", (req, res) => {
     .then((res) => res.json())
     .then((data) => {
       const result = data[req.params.id1].districtData[req.params.id2]
-      res.render('district', {
+      if(result){
+        res.render('district', {
           state: req.params.id1,
           city: req.params.id2,
           active: result.active,
@@ -17,6 +18,11 @@ router.get("/district/:id1/:id2", (req, res) => {
           confirmed: result.confirmed 
 
       })
+      }else{
+        res.render('404',{
+          error: 'District not found!'
+        })
+      }
     }
     );
 });
