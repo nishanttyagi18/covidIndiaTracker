@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+p{
+    font-size: xx-large;
+    color: rgb(26, 18, 18);
+    border-radius: 7px;
+}
+
+ h3{
+     width: max-content;
+     color: white;
+     margin: auto;
+ }
+
+
+
+
+
+
+ a:link {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+
+
+
+
+
+
+
+
+
+ .time{
+     font-size: 20px;
+ }
+
+.outer{
+    flex-grow: 1;
+}
+
+.myactive{
+    background-color: #ffffff;
+    padding: 5px;
+    color: blue;
+}
+
+.myrecovered{
+    background-color: #ffffff;
+    padding: 5px;
+    color: green;
+}
+
+.deaths{
+    background-color: #ffffff;
+    padding: 5px;
+    color: black;
+}
+.myconfirmed{
+    background-color: #ffffff;
+    padding: 5px;
+    color: red;
+}
+
+.selectWrapper {
+    width:40%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    background:#FFFFFF url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2211%22%20height%3D%2211%22%20viewBox%3D%220%200%2011%2011%22%3E%3Cpath%20d%3D%22M4.33%208.5L0%201L8.66%201z%22%20fill%3D%22%2300AEA9%22%2F%3E%3C%2Fsvg%3E') right 13px center no-repeat;
+}
+
+.form-group{
+    width: 70%;
+    margin: auto;
+}
+
+.selectWrapper select {
+        padding: 12px 40px 12px 20px;
+        font-size: 18px;
+        line-height: 18px;
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        background-image: none;
+        -webkit-appearance: none;
+        outline: none;
+        cursor: pointer;
+        -moz-appearance: none;
+        text-indent: 0.01px;
+        text-overflow: ellipsis;
+    }
+
+.btn{
+    width: 100px;
+}
+
+.footer{
+    margin-top: 10px;
+    background-color: rgb(71, 70, 70);
+    color: white;
+}
+.footer p{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    p{
+        font-size: smaller;
+    }
+    h1{
+        font-size: x-large;
+    }
+    h6{
+        font-size: small;
+    }
+    .time{
+        font-size: 12px;
+    }
+    .selectWrapper{
+        width: 80%;
+    }
+    .selectWrapper select {
+        font-size: 12px;
+    }
+    .form-group{
+        width: 100%;
+    }
+
+    #about{
+        font-size: small;
+    }
+    .footer p{
+        font-size: 13px;
+    }
+  }
